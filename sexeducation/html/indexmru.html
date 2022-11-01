@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MRU</title>
+        <link href="../css/estilos.css" type="text/css" rel="stylesheet">
+        <script src="../js/funciones.js"> </script>
+    </head>
+
+    <body>
+        <header class="header">
+            <ul>
+                <li>
+                    <a href="../index.html">INICIO</a>
+                </li>
+                <li id="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)"> 
+                    <a href="#">USUARIOS</a>
+                    <div id="subseccion1">
+                        <p><a href="html/indexformulario.html">REGISTRO</a></p>
+                        <p><a href="html/indexlogin.html">LOGIN</a></p>
+    
+             </li>
+                <li id="seccion2" onmouseover="ver(2)" onmouseout="ocultar(2)"> 
+                <a href="#">FUNCIONES</a>
+                <div id="subseccion2">
+                    <p><a href="html/indexmru.html">MRU</a></p>
+                    <p><a href="html/indexbiblioteca.html">BIBLIOTECA</a></p>
+                    <p><a href="html/indextrabajo.html">TRABAJO</a></p>
+                    <p><a href="html/paresimpares.html">PARES E IMPARES</a></p>
+            </li>
+            <li id="seccion3" onmouseover="ver(3)" onmouseout="ocultar(3)"> 
+                <a href="#">NOSOTROS</a>
+                <div id="subseccion3">
+                    <p><a href="html/mision.html">MISION</a></p>
+                    <p><a href="html/vision.html">VISION</a></p>
+                </li>
+        </ul>
+        </header>
+        <div id="contenedor">
+            <form action="../php/calcularvelocidad.php" id="cajadetexto" method="GET">
+            <h1 id="textocontenedor">MRU</h1>
+            <div id="textocontenedor">
+            <input type="text" placeholder="Digite distancia en Mt" name="cajadistancia"> <br>
+            <input type="text" placeholder="Digite tiempo en Segundos" name="cajatiempo"> <br>
+            <input type="submit" value="CALCULAR VELOCIDAD" >
+            </form>
+        </div>
+    </body>
+
+
+</html>
+

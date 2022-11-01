@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link href="../css/estilos.css" type="text/css" rel="stylesheet">
+</head>
+<body class="grid-container">
+    <header class="header">
+
+        <ul>
+
+            <li id="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)"> 
+                   <a id="titulo">USUARIOS</a>
+                   <div id="subseccion1">
+                       <p><a href="html/indexformulario.html">REGISTRO</a></p>
+                       <p><a href="html/indexlogin.html">LOGIN</a></p>
+   
+            </li>
+               <li id="seccion2" onmouseover="ver(2)" onmouseout="ocultar(2)"> 
+               <a id="titulo2">FUNCIONES</a>
+               <div id="subseccion2">
+                   <p><a href="html/indexmru.html">MRU</a></p>
+                   <p><a href="html/indexbiblioteca.html">BIBLIOTECA</a></p>
+                   <p><a href="html/indextrabajo.html">TRABAJO</a></p>
+                   <p><a href="html/paresimpares.html">PARES E IMPARES</a></p>
+                   <p><a href="html/mayor.html">NUMERO MAYOR</a></p>
+                   <p><a href="html/estudiantes.html">PORCENTAJE DE ESTUDIANTES</a></p>
+                   <p><a href="html/articulo.html">DESCUENTOS ARTICULOS</a></p>
+                   <p><a href="html/area.html">AREA-REC</a></p>
+                   <p><a href="html/cilindro.html">AREA-CILINDRO</a></p>
+                   <p><a href="html/triangulo.html">AREA-TRIANGULO</a></p>
+           </li>
+           <li id="seccion3" onmouseover="ver(3)" onmouseout="ocultar(3)"> 
+               <a id="titulo3">NOSOTROS</a>
+               <div id="subseccion3">
+                   <p><a href="html/mision.html">MISION</a></p>
+                   <p><a href="html/vision.html">VISION</a></p>
+               </li>
+
+               <li id="seccion4" onmouseover="ver(4)" onmouseout="ocultar(4)"> 
+                <a id="titulo4">CONTENIDO</a>
+                <div id="subseccion4">
+                    <p><a href="html/enfermedades.html">ENFERMEDADES</a></p>
+                    <p><a href="html/prevencion.html">PREVENCION</a></p>
+                    <p><a href="html/metodos.html">PLANIFICACION</a></p>
+                    <p><a href="html/sexualidad.html">SEXUALIDAD</a></p>
+                </li>
+       </ul>
+    </header>
+
+    <nav class="navbar">
+    </nav>
+    
+    <aside class="sidebar">
+    </aside>
+    
+    <div id="contenedor">
+        <h1 id="textocontenedor">DATOS USUARIO</h1>
+    
+        <form id="cajas" action="../php/insertar.php" method="POST">
+
+            <h3>TIPO DE ID</h3>
+            <select name="tipoid">
+                <option  value="TI"select>TI</option>
+                <option value="CC" >CC</option>
+                <option value="CE" >CE</option>
+                <option value="PASAPORTE" >PASAPORTE</option>
+            </select><br>
+            
+            <input type="text" placeholder="Digite Identificacion" name="boxid"><br>
+            <input type="text" placeholder="Digite Nombre" name="boxname"><br>
+            <input type="text" placeholder="Digite Apellido" name="boxlastname"><br>
+            <input type="text" placeholder="Digite E-mail" name="boxemail"><br>
+            <h3>TIPO DE USUARIO</h3>
+            <select name="tipousr">
+                <option value="Estudiante"selected>Estudiante</option>
+                <option value="Docente">Docente</option>
+                <option value="Directivo">Directivo</option>
+                <option value="Administrativo">Administrativo</option>
+            </select><br>
+            <input type="password" placeholder="Digite password" name="boxpass"><br>
+            <input type="text" placeholder="Digite #Celular" name="boxnumerocel"><br>
+            <input type="submit"  value="REGISTRAR" >
+
+        </form>    
+    </div>
+
+    <footer class="footer">BIENVENIDOS A NUESTRA PAGINA 
+    </footer>
+    <script src="../js/frontend.js"></script>
+</body>
+</html>
